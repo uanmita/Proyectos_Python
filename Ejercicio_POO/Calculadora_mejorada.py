@@ -28,18 +28,18 @@ class Calculadora:
 
 c1 = Calculadora()
 
-print ("Elija operacion a efectuar: 0 Todas, 1 Sumar, 2 Restar, 3 Multiplicar, 4 Dividir")
+print ("Elija operacion a efectuar: ** Todas, + Sumar, - Restar, * Multiplicar, / Dividir")
 
-operacion = int(input("¿Operacion?"))
-if operacion == 1:
+operacion = str(input("¿Operacion?"))
+if operacion == "+":
     c1.sumar()
-elif operacion == 2:
+elif operacion == "-":
     c1.restar()
-elif operacion == 3:
+elif operacion == "*":
     c1.multi()
-elif operacion == 4:
+elif operacion == "/":
     c1.div()
-elif operacion == 0:
+elif operacion == "**":
     c1.sumar()
     c1.restar()
     c1.multi()
